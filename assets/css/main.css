@@ -1,0 +1,102 @@
+body {
+    font-family: Times New Roman, Times, serif;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow: hidden;
+    padding: 0;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+}
+
+body * {
+    box-sizing: border-box
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.container,html {
+    height: -webkit-fill-available
+}
+
+.container {
+    align-items: center;
+    background-image: url("../img/background.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100%;
+    padding: 0 1rem;
+    width: 100%
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width:1320px
+    }
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    height: 50vh;
+    justify-content: flex-start;
+    padding-top: 25%;
+    text-align: center;
+    width: 100%
+}
+
+.links a {
+    color: #000;
+    text-decoration: none;
+    text-shadow: #fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px,#fff 0 0 49px
+}
+
+.links a:hover {
+    text-decoration: line-through
+}
+
+@media(min-width: 768px) {
+    .links {
+        font-size:40px;
+        padding-top: 7%;
+        width: 50%
+    }
+}
+
+.fade {
+    pointer-events: none;
+    transition: opacity 1s ease-in-out
+}

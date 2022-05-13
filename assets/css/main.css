@@ -95,8 +95,3 @@ body * {
         width: 50%
     }
 }
-
-.fade {
-    pointer-events: none;
-    transition: opacity 1s ease-in-out
-}
